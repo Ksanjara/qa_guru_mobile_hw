@@ -7,43 +7,42 @@ import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
-import static config.ConfigCreator.config;
-import static helpers.Browserstack.getBrowserstackUrl;
-import static helpers.Environment.*;
+import static config.ConfigCreator.remoteConfig;
+import static helpers.BrowserstackVideoHelper.getBrowserstackUrl;
+
 
 public class BrowserstackDriver implements WebDriverProvider {
     @Override
     public WebDriver createDriver(Capabilities capabilities) {
-        if (isAndroid) {
+        if (remoteConfig.os().equals("Android")) {
             return getAndroidDriver();
-        } else if (isIos) {
+        } else {
             return getIosDriver();
         }
-        return null;
     }
 
     private DesiredCapabilities commonCapabilities() {
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("project", config.project());
+        capabilities.setCapability("project", remoteConfig.project());
 
         return capabilities;
     }
 
     private AndroidDriver getAndroidDriver() {
         DesiredCapabilities capabilities = commonCapabilities();
-        capabilities.setCapability("deviceName", androidDevice);
-        capabilities.setCapability("os_version", androidVersion);
-        capabilities.setCapability("app", androidBrowserstackApp);
+        capabilities.setCapability("deviceName", remoteConfig.deviceModel());
+        capabilities.setCapability("os_version", remoteConfig.osVersion());
+        capabilities.setCapability("app", remoteConfig.appUrl());
 
         return new AndroidDriver(getBrowserstackUrl(), capabilities);
     }
 
     private IOSDriver getIosDriver() {
         DesiredCapabilities capabilities = commonCapabilities();
-        capabilities.setCapability("deviceName", iosDevice);
-        capabilities.setCapability("os_version", iosVersion);
+        capabilities.setCapability("deviceName", remoteConfig.deviceModel());
+        capabilities.setCapability("os_version", remoteConfig.osVersion());
         capabilities.setCapability("autoAcceptAlerts", true);
-        capabilities.setCapability("app", iosBrowserstackApp);
+        capabilities.setCapability("app", remoteConfig.appUrl());
 
         return new IOSDriver(getBrowserstackUrl(), capabilities);
     }

@@ -38,8 +38,13 @@ dependencies {
             "io.rest-assured:rest-assured:$restAssuredVersion",
             "org.junit.jupiter:junit-jupiter:$junitVersion",
             "org.slf4j:slf4j-simple:$slf4jVersion",
+            "commons-io:commons-io:2.11.0",
             "org.aeonbits.owner:owner:$ownerVersion"
     )
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
 }
 
 tasks.withType(Test) {
@@ -54,14 +59,14 @@ tasks.withType(Test) {
     }
 }
 
-task android_tests(type: Test) {
+task local_test(type: Test) {
     useJUnitPlatform {
-        includeTags("Android")
+        includeTags("local")
     }
 }
 
-task ios_tests(type: Test) {
+task remote_test(type: Test) {
     useJUnitPlatform {
-        includeTags("iOS")
+        includeTags("remote")
     }
 }
