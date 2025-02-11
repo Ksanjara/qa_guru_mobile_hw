@@ -57,7 +57,7 @@ public class WikiLocalTests extends TestBase {
     @Severity(SeverityLevel.NORMAL)
     @Tag("Positive")
     @Test
-    void saveArticleTest(){
+    void saveArticleTest() {
         String searchValue = "Appium";
 
         back();

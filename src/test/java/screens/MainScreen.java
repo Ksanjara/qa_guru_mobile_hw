@@ -9,7 +9,7 @@ import static io.appium.java_client.AppiumBy.id;
 
 public class MainScreen {
     private final SelenideElement searchField = $(accessibilityId("Search Wikipedia")),
-    savedArticlesIcon = $(id("org.wikipedia.alpha:id/nav_tab_reading_lists"));
+            savedArticlesIcon = $(id("org.wikipedia.alpha:id/nav_tab_reading_lists"));
 
     @Step("Open search page")
     public MainScreen openSearchPage() {
@@ -18,7 +18,7 @@ public class MainScreen {
     }
 
     @Step("Navigate to \"Saved\" section")
-    public MainScreen goToSavedSection(){
+    public MainScreen goToSavedSection() {
         savedArticlesIcon.click();
         return this;
     }
