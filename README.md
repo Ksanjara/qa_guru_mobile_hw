@@ -2,6 +2,7 @@
 <p align="center">
 <a href="https://ru.wikipedia.org/"><img title="https://ru.wikipedia.org/" src="media/screens/wikipedia.jpg"></a>
 </p>
+
 ## :page_with_curl: Content:
 
 - <a href="#tools"> Instruments used</a>
@@ -20,7 +21,7 @@
 
 | Java                                                                                                    | IntelliJ  <br>  Idea                                                                                                      | GitHub                                                                                                     | JUnit 5                                                                                                          | Gradle                                                                                                    | Allure <br> Report                                                                                                                | Appium                                                                                                   | Browserstack                                                                                                                                       | Jenkins                                                                                                         | Telegram                                                                                                         |                                                                                               Allure <br> TestOps |
 |:--------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------:|
-| <a href="https://www.java.com/"><img src="media/logo/Java.svg" width="50" height="50"  alt="Java"/></a> | <a href="https://www.jetbrains.com/idea/"><img src="media/logo/Intelij_Idea.svg" width="50" height="50"  alt="IDEA"/></a> | <a href="https://github.com/"><img src="media/logo/GitHub.svg" width="50" height="50"  alt="Github"/></a> | <a href="https://junit.org/junit5/"><img src="media/logo/Junit5.svg" width="50" height="50"  alt="JUnit 5"/></a> | <a href="https://gradle.org/"><img src="media/logo/Gradle.svg" width="50" height="50"  alt="Gradle"/></a>  | <a href="https://github.com/allure-framework"><img src="media/logo/Allure_Report.svg" width="50" height="50"  alt="Allure"/></a>  | <a href="https://appium.io//"><img src="media/logo/Appium.png" width="50" height="50" alt="Appium"/></a> | <a href="https://www.browserstack.com/"> <center> <img src="media/logo/Browserstack.svg" width="50" height="50" alt="Browserstack"/></a> </center> | <a href="https://www.jenkins.io/"><img src="media/logo/Jenkins.svg" width="50" height="50"  alt="Jenkins"/></a> | <a href="https://web.telegram.org/"><img src="media/logo/Telegram.svg" width="50" height="50" alt="Telegram"/></a> | <a href="https://qameta.io/"><img src="media/logo/AllureTestOps.svg" width="50" height="50" alt="Allure_TO"/></a> |
+| <a href="https://www.java.com/"><img src="media/logo/Java.svg" width="50" height="50"  alt="Java"/></a> | <a href="https://www.jetbrains.com/idea/"><img src="media/logo/Intelij_IDEA.svg" width="50" height="50"  alt="IDEA"/></a> | <a href="https://github.com/"><img src="media/logo/GitHub.svg" width="50" height="50"  alt="Github"/></a> | <a href="https://junit.org/junit5/"><img src="media/logo/JUnit5.svg" width="50" height="50"  alt="JUnit 5"/></a> | <a href="https://gradle.org/"><img src="media/logo/Gradle.svg" width="50" height="50"  alt="Gradle"/></a>  | <a href="https://github.com/allure-framework"><img src="media/logo/Allure_Report.svg" width="50" height="50"  alt="Allure"/></a>  | <a href="https://appium.io//"><img src="media/logo/Appium.png" width="50" height="50" alt="Appium"/></a> | <a href="https://www.browserstack.com/"> <center> <img src="media/logo/Browserstack.svg" width="50" height="50" alt="Browserstack"/></a> </center> | <a href="https://www.jenkins.io/"><img src="media/logo/Jenkins.svg" width="50" height="50"  alt="Jenkins"/></a> | <a href="https://web.telegram.org/"><img src="media/logo/Telegram.svg" width="50" height="50" alt="Telegram"/></a> | <a href="https://qameta.io/"><img src="media/logo/AllureTestOps.svg" width="50" height="50" alt="Allure_TO"/></a> |
 
 Autotests are created using `Java` programming language with plugins: `JUnit 5`, `Selenide`, `Appium`. Project builder - `Gradle`. For remote build job in `Jenkins` created with creating `Allure Report` at the end of the testing run.
 After all tests when Allure Report is ready there are `Telegram notifications` using chat bot realized.
@@ -30,7 +31,7 @@ Autotests may be launched locally using `Android Studio` or remotely using `Brow
 ---
 
 <a id="checking"></a>
-## :male_detective:: Test Cases
+## :male_detective: Test Cases
 
 **Local test cases**:
 - ✓ Check Onboarding screens
@@ -41,6 +42,8 @@ Autotests may be launched locally using `Android Studio` or remotely using `Brow
 - ✓ Check that query response is not empty
 - ✓ Open first result of query
 - ✓ Check article short description
+
+---
 
 <a id="console"></a>
 ### :compass: How to run tests using command line
