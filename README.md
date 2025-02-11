@@ -1,6 +1,6 @@
 # Automated mobile tests for [Wikipedia](https://www.wikipedia.org/) mobile app
 <p align="center">
-<a href="https://ru.wikipedia.org/"><img title="https://ru.wikipedia.org/" src="media/screens/wikipedia.jpg"></a>
+<a href="https://ru.wikipedia.org/"><img title="https://ru.wikipedia.org/" src="media/screens/wikipedia.jpg" height="50%" width="50%"></a>
 </p>
 
 ## :page_with_curl: Content:
