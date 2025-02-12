@@ -13,12 +13,13 @@ import static io.appium.java_client.AppiumBy.id;
 public class SavedScreen {
     private final SelenideElement firstSavedGroup = $(id("org.wikipedia.alpha:id/item_title")),
             savedGroupTitle = $(id("org.wikipedia.alpha:id/item_title")),
-            articleInfo = $(id("org.wikipedia.alpha:id/reading_list_recycler_view"));
+            gotItButton = $(id("org.wikipedia.alpha:id/buttonView"));
     private final ElementsCollection articleTitle = $$(id("org.wikipedia.alpha:id/page_list_item_title"));
 
     @Step("Go to first saved group")
     public SavedScreen openFirstGroup() {
         firstSavedGroup.click();
+        gotItButton.click();
         savedGroupTitle.shouldHave(Condition.text("Saved"));
         return this;
     }
@@ -28,6 +29,5 @@ public class SavedScreen {
         articleTitle.shouldHave(CollectionCondition.texts(articleName));
         return this;
     }
-
 
 }
