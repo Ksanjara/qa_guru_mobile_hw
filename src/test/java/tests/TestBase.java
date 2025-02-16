@@ -36,7 +36,7 @@ public class TestBase {
             throw new RuntimeException("Unknown deviceHost was provided.");
         }
         Configuration.browserSize = null;
-        Configuration.timeout = 30000;
+        Configuration.timeout = 10000;
     }
 
     @BeforeEach

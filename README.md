@@ -10,8 +10,9 @@
 - <a href="#console"> How to run tests using command line</a>
 - <a href="#jenkins"> Jenkins build</a>
 - <a href="#report"> Allure report</a>
-- <a href="#testops"> Integration with AllureTestOps</a>
 - <a href="#tg"> Telegram notifications using chat bot</a>
+- <a href="#testops"> Integration with AllureTestOps</a>
+- <a href="#jira"> Integration with Jira</a>
 - <a href="#browserstack"> Test run video</a>
 ---
 
@@ -139,6 +140,17 @@ You can see the results via Allure Reports by clicking on Allure icon near build
 <p align="center">
 <img src="media/screens/Allure_testops_run.png">
 </p>
+
+---
+<a id="jira"></a>
+## <img src="media/logo/Jira.svg" width="25" height="25"/> Integration with [Jira](https://jira.autotests.cloud/browse/HOMEWORK-1403)
+
+### Jira task with Allure TestOps integration
+<p align="center">
+<img src="media/screens/Jira.png" alt="Jira task">
+</p>
+
+---
 
 <a id="browserstack"></a>
 ## <img alt="Browserstack" height="25" src="media/logo/Browserstack.svg" width="25"/></a> Video example from Browserstack

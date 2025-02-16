@@ -8,8 +8,7 @@ import static com.codeborne.selenide.Selenide.back;
 import static io.appium.java_client.AppiumBy.id;
 
 public class ArticleScreen {
-    private final SelenideElement saveArticleButton = $(id("org.wikipedia.alpha:id/page_save")),
-            savedToolbar = $(id("org.wikipedia.alpha:id/snackbar_text"));
+    private final SelenideElement saveArticleButton = $(id("org.wikipedia.alpha:id/page_save"));
 
     @Step("Save article")
     public ArticleScreen saveArticle() {

@@ -27,21 +27,21 @@ public class WikiLocalTests extends TestBase {
                 .checkLanguageList(textsData.firstPageLanguages)
                 .checkAddLanguageButton()
                 .checkGetStartedButtonNotVisible()
-                .checkSkipContinueVisible()
+                .checkSkipContinueButtonsVisible()
                 .goNextScreen()
 
                 //second screen
                 .checkHeader(textsData.secondPageHeader)
                 .checkText(textsData.secondPageText)
                 .checkGetStartedButtonNotVisible()
-                .checkSkipContinueVisible()
+                .checkSkipContinueButtonsVisible()
                 .goNextScreen()
 
                 //third screen
                 .checkHeader(textsData.thirdPageHeader)
                 .checkText(textsData.thirdPageText)
                 .checkGetStartedButtonNotVisible()
-                .checkSkipContinueVisible()
+                .checkSkipContinueButtonsVisible()
                 .goNextScreen()
 
                 //four screen

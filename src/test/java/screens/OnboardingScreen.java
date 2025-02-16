@@ -20,22 +20,19 @@ public class OnboardingScreen {
     @Step("Check that page header contains {0} text")
     public OnboardingScreen checkHeader(String header) {
         onboardingScreenHeader.shouldHave(text(header));
-
         return this;
     }
 
     @Step("Check that page contains {0} text")
     public OnboardingScreen checkText(String text) {
         onboardingScreenText.shouldHave(text(text));
-
         return this;
     }
 
     @Step("Check Skip and Continue buttons are visible")
-    public OnboardingScreen checkSkipContinueVisible() {
+    public OnboardingScreen checkSkipContinueButtonsVisible() {
         skipButton.shouldBe(Condition.visible);
         continueButton.shouldBe(Condition.visible);
-
         return this;
     }
 
@@ -43,49 +40,42 @@ public class OnboardingScreen {
     public OnboardingScreen checkSkipContinueNotVisible() {
         skipButton.shouldNotBe(Condition.visible);
         continueButton.shouldNotBe(Condition.visible);
-
         return this;
     }
 
     @Step("Go to the next screen")
     public OnboardingScreen goNextScreen() {
         continueButton.click();
-
         return this;
     }
 
     @Step("Check that Get Started button is visible")
     public OnboardingScreen checkGetStartedButtonVisible() {
         getStartedButton.shouldBe(Condition.visible);
-
         return this;
     }
 
     @Step("Check that Get Started button is not visible")
     public OnboardingScreen checkGetStartedButtonNotVisible() {
         getStartedButton.shouldNotBe(Condition.visible);
-
         return this;
     }
 
     @Step("Click Get Started button")
     public OnboardingScreen getStarted() {
         getStartedButton.click();
-
         return this;
     }
 
     @Step("Check language list")
     public OnboardingScreen checkLanguageList(String languages) {
         languageList.shouldHave(text(languages));
-
         return this;
     }
 
     @Step("Check Add Language button existence")
     public OnboardingScreen checkAddLanguageButton() {
         addLanguageButton.shouldBe(Condition.visible);
-
         return this;
     }
 }
